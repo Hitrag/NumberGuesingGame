@@ -1,9 +1,9 @@
 #include <iostream>
 #include <random>
 #include <stdio.h>
-// Last Worked on: 17:05 26/03/2025
+// Last Worked on: 17:52 26/03/2025
 // What does it do: asks you for what diffuculty to play it
-// Missing: Shorter
+// Making it shorter via functions
 int anscheck(int r, int g) {
     if (g < 1 || g> 100) {
         return 2;
