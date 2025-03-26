@@ -38,22 +38,22 @@ int main() {
         int ran = rng(mt);
         if (dif <= 3 && dif >= 1) {
             int tf=0;
+            int gues;
             switch (dif) {
             case 1:
                 for (int i = 0; i < 10;) {
-                    int gues;
-                    std::cout << "\ntake a gues what number might be? ";
+                    std::cout << "\ntake a guess what number might be? ";
                     std::cin >> gues;
                     if (anscheck(ran, gues) == 0) {
-                        std::cout << "\nYour gues was right the number was " << ran << std::endl;
+                        std::cout << "\nYour guess was right the number was " << ran << std::endl;
                         i = 10;
                     }
                     else if (anscheck(ran, gues) == 1) {
-                        std::cout << "\nYou guesed the wrong number, the number was bigger then your gues of " << gues << std::endl;
+                        std::cout << "\nYou guessed the wrong number, the number was bigger then your guess of " << gues << std::endl;
                         i++;
                     }
                     else if (anscheck(ran, gues) == -1) {
-                        std::cout << "\nYou guesed the wrong number, the number was smaller then your gues of " << gues << std::endl;
+                        std::cout << "\nYou guesed the wrong number, the number was smaller then your guess of " << gues << std::endl;
                         i++;
                     }
                     else if (anscheck(ran, gues) == 2) {
@@ -68,19 +68,18 @@ int main() {
                 break;
             case 2:
                 for (int i = 0; i < 5;) {
-                    int gues;
-                    std::cout << "\ntake a gues what number might be? ";
+                    std::cout << "\ntake a guess what number might be? ";
                     std::cin >> gues;
                     if (anscheck(ran, gues) == 0) {
-                        std::cout << "\nYour gues was right the number was " << ran << std::endl;
+                        std::cout << "\nYour guess was right the number was " << ran << std::endl;
                         i = 5;
                     }
                     else if (anscheck(ran, gues) == 1) {
-                        std::cout << "\nYou guesed the wrong number, the number was bigger then your gues of " << gues << std::endl;
+                        std::cout << "\nYou guessed the wrong number, the number was bigger then your guess of " << gues << std::endl;
                         i++;
                     }
                     else if (anscheck(ran, gues) == -1) {
-                        std::cout << "\nYou guesed the wrong number, the number was smaller then your gues of " << gues << std::endl;
+                        std::cout << "\nYou guessed the wrong number, the number was smaller then your guess of " << gues << std::endl;
                         i++;
                     }
                     else if (anscheck(ran, gues) == 2) {
@@ -95,20 +94,19 @@ int main() {
                 break;
             case 3:
                 for (int i = 0; i < 3;) {
-                    int gues;
-                    std::cout << "\ntake a gues what number might be? ";
+                    std::cout << "\ntake a guess what number might be? ";
                     std::cin >> gues;
                     if (anscheck(ran, gues) == 0) {
-                        std::cout << "\nYour gues was right the number was " << ran << std::endl;
+                        std::cout << "\nYour guess was right the number was " << ran << std::endl;
                         i = 3;
                         tf = 1;
                     }
                     else if (anscheck(ran, gues) == 1) {
-                        std::cout << "\nYou guesed the wrong number, the number was bigger then your gues of " << gues << std::endl;
+                        std::cout << "\nYou guessed the wrong number, the number was bigger then your guess of " << gues << std::endl;
                         i++;
                     }
                     else if (anscheck(ran, gues) == -1) {
-                        std::cout << "\nYou guesed the wrong number, the number was smaller then your gues of " << gues << std::endl;
+                        std::cout << "\nYou guessed the wrong number, the number was smaller then your guess of " << gues << std::endl;
                         i++;
                     }
                     else if (anscheck(ran, gues) == 2) {
