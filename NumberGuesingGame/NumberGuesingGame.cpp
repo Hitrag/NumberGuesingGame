@@ -1,7 +1,7 @@
 #include <iostream>
 #include <random>
 #include <stdio.h>
-// Last Worked on: 19:00 26/03/2025
+// Last Worked on: 19:00 2025/03/26
 // What does it do: asks you for what diffuculty to play it
 // Making it shorter via functions
 int anscheck(int r, int g) {
