@@ -42,7 +42,7 @@ int main() {
             case 1:
                 for (int i = 0; i < 10;) {
                     int gues;
-                    std::cout << "take a gues what number might be? ";
+                    std::cout << "\ntake a gues what number might be? ";
                     std::cin >> gues;
                     if (anscheck(ran, gues) == 0) {
                         std::cout << "\nYour gues was right the number was " << ran << std::endl;
@@ -69,7 +69,7 @@ int main() {
             case 2:
                 for (int i = 0; i < 5;) {
                     int gues;
-                    std::cout << "take a gues what number might be? ";
+                    std::cout << "\ntake a gues what number might be? ";
                     std::cin >> gues;
                     if (anscheck(ran, gues) == 0) {
                         std::cout << "\nYour gues was right the number was " << ran << std::endl;
@@ -96,7 +96,7 @@ int main() {
             case 3:
                 for (int i = 0; i < 3;) {
                     int gues;
-                    std::cout << "take a gues what number might be? ";
+                    std::cout << "\ntake a gues what number might be? ";
                     std::cin >> gues;
                     if (anscheck(ran, gues) == 0) {
                         std::cout << "\nYour gues was right the number was " << ran << std::endl;
