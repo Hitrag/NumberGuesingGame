@@ -1,7 +1,7 @@
 #include <iostream>
 #include <random>
 #include <stdio.h>
-// Last Worked on: 19:00 2025/03/26
+// Last Worked on: 19:35 2025/03/28
 // What does it do: asks you for what diffuculty to play it
 // Making it shorter via functions
 int anscheck(int r, int g) {
@@ -42,6 +42,7 @@ int main() {
             switch (dif) {
             case 1:
                 for (int i = 0; i < 10;) {
+                    std::cout << "\nThis is your" << i + 1 << " guess";
                     std::cout << "\ntake a guess what number might be? ";
                     std::cin >> gues;
                     if (anscheck(ran, gues) == 0) {
@@ -68,6 +69,7 @@ int main() {
                 break;
             case 2:
                 for (int i = 0; i < 5;) {
+                    std::cout << "\nThis is your" << i + 1 << " guess";
                     std::cout << "\ntake a guess what number might be? ";
                     std::cin >> gues;
                     if (anscheck(ran, gues) == 0) {
@@ -94,6 +96,7 @@ int main() {
                 break;
             case 3:
                 for (int i = 0; i < 3;) {
+                    std::cout << "\nThis is your" << i + 1 << " guess";
                     std::cout << "\ntake a guess what number might be? ";
                     std::cin >> gues;
                     if (anscheck(ran, gues) == 0) {
